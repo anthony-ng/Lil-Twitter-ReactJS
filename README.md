@@ -24,7 +24,7 @@ $ rails server
 
 Install React Tools
 ```sh
-npm install react-tools
+npm install react-tools -g
 
 ```
 create a react folder
