@@ -1,5 +1,7 @@
+//= require react
+
 var Header = React.createClass({
-  render: functnio() {
-    <div>Testing</div>
+  render: function() {
+    <div>{this.props.title}</div>
   }
 })

@@ -5,7 +5,7 @@ var Twitter = React.createClass({displayName: "Twitter",
   render: function() {
     return (
       React.createElement("header", {id: "top-nav"}, 
-        React.createElement("div", {id: "brand"}, "Super Twitter API"), 
+        React.createElement("div", {id: "brand"}, "Lil Twitter API"), 
         React.createElement("form", {id: "search-form"}, 
           React.createElement("input", {id: "search", type: "text", name: "query"})
         ), 
