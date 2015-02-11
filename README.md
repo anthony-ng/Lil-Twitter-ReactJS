@@ -25,6 +25,7 @@ $ rails server
 Install React Tools
 ```sh
 npm install react-tools -g
+<<<<<<< HEAD
 
 ```
 create a react folder
@@ -79,21 +80,20 @@ Check the API docs below.
 If no data is provided for avatar_url, content, handle, or username, fake data is used instead.
 
 The endpoint returns the created tweet as JSON.
+=======
+>>>>>>> 128b679768a775834afd49f22652c37d94fcb5b8
 
 ```
-    { "avatar_url":"http://robohash.org/marco_schumm",
-      "content":"Ut fugit ut labore repellendus.",
-      "created_at":"2014-07-20T20:27:42Z",
-      "handle":"@marco_schumm",
-      "id":500,
-      "updated_at":"2014-07-20T20:27:42Z",
-      "username":"Adaline Bins",
-      "hashtag_names": [ "est", "rerum", "distinctio" ] }
+create a react folder
+```sh
+mkdir app/assets/react
 ```
-
-`GET /hashtags/popular` returns the names of the 10 most popular hashtags. The output looks like this:
+watch your jsx files:
+```sh
+jsx --watch app/assets/react/ app/assets/javascripts/components -x jsx
 
 ```
+<<<<<<< HEAD
   [ "est",
     "voluptas",
     "consequatur",
@@ -105,3 +105,9 @@ The endpoint returns the created tweet as JSON.
     "iure",
     "sint" ]
 ```
+=======
+## Releases
+
+### Release 0: Static React
+Turn the views into React components
+>>>>>>> 128b679768a775834afd49f22652c37d94fcb5b8

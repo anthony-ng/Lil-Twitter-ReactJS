@@ -18,4 +18,3 @@ var Twitter = React.createClass({displayName: "Twitter",
     )
   }
 })
-
