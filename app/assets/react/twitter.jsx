@@ -1,159 +1,21 @@
 //= require react
 //= require components/header
+//= require components/tweet-box
+//= require components/trends
+//= require components/tweets
 
 var Twitter = React.createClass({
   render: function() {
     return (
-
-      <header id="top-nav">
-      <div id="brand">Super Twitter API</div>
-      <form id="search-form" >
-      <input id="search" type="text" name="query" />
-      </form>
-      <i className="fa fa-search"></i>
-      </header>
-
-
-      <section className="container">
-      <section id="tweet-box" >
-      <p id="tweet-box-title">Compose New Tweet</p>
-      <form id="tweet-form">
-      <textarea id="new-tweet" cols="30" rows="5" maxlength="140" name="tweet"></textarea>
-      <input type="submit" value="Tweet" />
-      </form>
-      </section>
-      <section id="trends-container" >
-      <h3>Trends</h3>
-      <ul>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      <li>filler</li>
-      </ul>
-      </section>
-      <section id="tweets-container">
-      <h3>Tweets</h3>
-      <ul>
-      <li className="tweet">
-      <img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-      <div className="tweet-content">
-      <p>
-      <span className="full-name">Sam Samskies</span>
-      <span className="username">@SamSamskies</span>
-      <span className="timestamp">- 6m</span>
-      </p>
-                <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                  <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-<li className="tweet">
-<img className="avatar" src="https://pbs.twimg.com/profile_images/2858734172/db7da718fd369eba6184973631d7d84a_bigger.jpeg" alt="">
-<div className="tweet-content">
-<p>
-<span className="full-name">Sam Samskies</span>
-<span className="username">@SamSamskies</span>
-<span className="timestamp">- 6m</span>
-</p>
-                          <p>My latest contribution to the advancement of the human race. I present to you ver 0.0.1 of http://mileyroids.com/  #Mileyroids #miley haha :)</p>
-</div>
-</li>
-</ul>
-</section>
-</section>
-
-)
-}
+      <div>
+        <Header />
+        <section className="container">
+          <TweetBox />
+          <Trends />
+          <Tweets />
+        </section>
+      </div>
+    )
+  }
 })
+
