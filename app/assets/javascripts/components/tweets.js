@@ -1,5 +1,6 @@
 //= require react
 //= require components/tweet
+//= require stores/tweet-store
 
 var Tweets = React.createClass({displayName: "Tweets",
   // 1st: initialize the tweets array----------------------------------
@@ -14,16 +15,26 @@ var Tweets = React.createClass({displayName: "Tweets",
   // call server and update the state
   // componentDidMount is a built-in React method
   componentDidMount: function() {
-    $.ajax({
-      url: '/tweets/recent',
-      type: 'GET'
-    }).done(function(serverResponse) {
-  // setting a State name tweets. setState is a built-in React method
+    // TweetStore.recent(function(response) {
+    TweetStore.onChangeEvent(function(event, response) {
       this.setState({
-        tweets: serverResponse
+        tweets: response
       })
     }.bind(this))
+    TweetStore.recent()
   },
+
+  // componentDidMount: function() {
+  //   $.ajax({
+  //     url: '/tweets/recent',
+  //     type: 'GET'
+  //   }).done(function(serverResponse) {
+  // // setting a State name tweets. setState is a built-in React method
+  //     this.setState({
+  //       tweets: serverResponse
+  //     })
+  //   }.bind(this))
+  // },
 
   // 4th: accept the ajax response and convert to proper format for rendering
   renderTweets: function() {
@@ -40,6 +51,7 @@ var Tweets = React.createClass({displayName: "Tweets",
     // var tweets = data.map(function(tweet){
 
     var tweets = this.state.tweets.map(function(tweet){
+      // the capital Tweet is the component file for tweet.jsx, which renders just one tweet
       return(React.createElement(Tweet, {key: tweet.id, tweet: tweet}));
     })
     return tweets;
