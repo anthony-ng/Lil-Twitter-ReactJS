@@ -93,21 +93,3 @@ watch your jsx files:
 jsx --watch app/assets/react/ app/assets/javascripts/components -x jsx
 
 ```
-<<<<<<< HEAD
-  [ "est",
-    "voluptas",
-    "consequatur",
-    "at",
-    "accusamus",
-    "doloremque",
-    "culpa",
-    "quod",
-    "iure",
-    "sint" ]
-```
-=======
-## Releases
-
-### Release 0: Static React
-Turn the views into React components
->>>>>>> 128b679768a775834afd49f22652c37d94fcb5b8
